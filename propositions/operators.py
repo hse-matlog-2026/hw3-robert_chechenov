@@ -94,3 +94,4 @@ def to_implies_false(formula: Formula) -> Formula:
     return to_implies_not(formula).substitute_operators({
         '~': Formula.parse('(p->F)')
     })
+
